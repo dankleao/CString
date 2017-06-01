@@ -11,7 +11,7 @@ PUBLIC char** split2(char*,char,int);
 
 PUBLIC char** split( char* str, char token )
 {
-    if( strlen(str) == 0 ) 
+    if( ! (*str) ) 
         return NULL;
         
     return split2(str,token,0);
@@ -37,7 +37,7 @@ PUBLIC char** split2( char* str, char token, int id )
         }
     }
 
-    if( *index == '\0' )
+    if( ! (*index) )
     {
         substring = (char**) malloc(sizeof(char*) * (id+1) );
         substring[id] = (char*) malloc(sizeof(char)* (index - str)+1 );
