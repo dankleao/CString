@@ -1,18 +1,17 @@
-//
-// Created by Daniel Cardoso on 25/05/17.
-//
 
-#ifndef PROJECTFILESYSTEM_DEF_H
-#define PROJECTFILESYSTEM_DEF_H
+
+#ifndef DEF_H 
+#define DEF_H
 
 #include <stdlib.h>
 
-#define PUBLIC
-#define PRIVATE static
+
+#define PUBLIC 
+#define PRIVATE static 
 
 typedef enum bool{
-    FALSE,
-    TRUE
+	FALSE,
+	TRUE
 }Bool;
 
-#endif //PROJECTFILESYSTEM_DEF_H
+#endif //DEF_H
